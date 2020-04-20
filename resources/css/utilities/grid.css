@@ -1,0 +1,36 @@
+@responsive {
+  .grid-ac-start {align-content: start;}
+  .grid-ac-end {align-content: end;}
+  .grid-ac-center {align-content: center;}
+  .grid-ac-around {align-content: space-around;}
+  .grid-ac-between {align-content: space-between;}
+
+  .grid-ai-start {align-items: start;}
+  .grid-ai-end {align-items: end;}
+  .grid-ai-center {align-items: center;}
+  .grid-ai-baseline {align-items: baseline;}
+  .grid-ai-stretch {align-items: stretch;}
+
+  .grid-as-start {align-self: start;}
+  .grid-as-end {align-self: end;}
+  .grid-as-center {align-self: center;}
+  .grid-as-stretch {align-self: stretch;}
+
+  .grid-jc-start {justify-content: start;}
+  .grid-jc-end {justify-content: end;}
+  .grid-jc-center {justify-content: center;}
+  .grid-jc-stretch {justify-content: stretch;}
+  .grid-jc-around {justify-content: space-around;}
+  .grid-jc-between {justify-content: space-between;}
+  .grid-jc-evenly {justify-content: space-evenly;}
+
+  .grid-ji-start {justify-items: start;}
+  .grid-ji-end {justify-items: end;}
+  .grid-ji-center {justify-items: center;}
+  .grid-ji-stretch {justify-items: stretch;}
+
+  .grid-js-start {justify-self: start;}
+  .grid-js-end {justify-self: end;}
+  .grid-js-center {justify-self: center;}
+  .grid-js-stretch {justify-self: stretch;}
+}

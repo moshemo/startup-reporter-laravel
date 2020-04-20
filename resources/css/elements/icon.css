@@ -1,0 +1,23 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon--input {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+
+  @apply text-grey-light;
+  @apply h-10 w-10;
+}
+
+.icon--input-left {
+  left: 0;
+}
+
+.icon--input-right {
+  right: 0;
+}

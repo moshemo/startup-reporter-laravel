@@ -1,0 +1,51 @@
+.banner-ad {
+  text-align: center;
+
+  @apply bg-dark;
+  @apply leading-5;
+  @apply my-8 mx-auto;
+  @apply pt-0 px-0 pb-8;
+  @apply text-light;
+  @apply w-64;
+}
+
+.banner-ad-title {
+  font-weight: 700;
+
+  @apply bg-yellow-400;
+  @apply mt-0 mx-0 mb-6;
+  @apply p-3;
+  @apply text-dark;
+  @apply text-2xl;
+}
+
+.banner-ad-subtitle {
+  @apply text-light;
+
+  font-size: 22px;
+  font-weight: 500;
+
+  @apply leading-7;
+  @apply mt-0 mx-0 mb-6;
+  @apply px-2 px-4;
+}
+
+.banner-ad-button {
+  @extend .button;
+  border-radius: 0;
+
+  @apply bg-secondary-darker;
+  @apply py-3 px-5;
+  @apply text-light;
+
+  &:hover {
+    border: 0;
+
+    @apply bg-secondary-darkest;
+    @apply text-light;
+  }
+
+  &:focus {
+    @apply bg-secondary-darkest;
+  }
+}

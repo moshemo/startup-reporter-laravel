@@ -1,0 +1,33 @@
+.container--media {
+  @screen xs {
+    max-width: 400px;
+  }
+  @screen sm {
+    max-width: 720px;
+  }
+  @screen md {
+    max-width: 960px;
+  }
+  @screen lg {
+    max-width: 1140px;
+  }
+  @screen xl {
+    max-width: 1280px;
+  }
+}
+
+.container {
+  @extend .container--media;
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+}
+
+.fluid-container {
+  @extend .container--media;
+  max-width: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 100%;
+}

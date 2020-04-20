@@ -1,0 +1,117 @@
+.field {
+  @apply mb-3;
+  &:last {
+    @apply mb-0;
+  }
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+
+  @apply mb-2;
+  @apply text-dark text-base;
+}
+
+.control {
+  box-sizing: border-box;
+  clear: both;
+  position: relative;
+  text-align: left;
+
+  @apply text-base;
+}
+
+.input {
+  -webkit-appearance: none;
+
+  align-items: center;
+  display: inline-flex;
+  justify-content: flex-start;
+  position: relative;
+  vertical-align: top;
+
+  border: 1px solid theme("colors.grey.light");
+  @apply h-12;
+  @apply max-w-full w-full;
+  @apply py-1 px-3;
+  @apply text-base leading-300;
+
+  &:hover {
+    @apply border-grey;
+  }
+
+  &:active,
+  &:focus {
+    @apply border-primary;
+    outline: 0;
+  }
+
+  &::placeholder {
+    @apply text-grey;
+  }
+}
+
+.input--icon-left {
+  @apply pr-8;
+}
+
+.input--icon-right {
+  @apply pl-8;
+}
+
+.textarea {
+  display: block;
+
+  border: 1px solid theme("colors.grey.light");
+  max-height: 40em;
+  min-height: 8em;
+  resize: vertical;
+  width: 100%;
+
+  @apply max-w-full min-w-full;
+  @apply p-3;
+}
+
+.help {
+  display: block;
+
+  @apply mt-2;
+  @apply text-sm;
+}
+
+.dark-form .input-error {
+  @apply bg-error-darkest !important;
+  @apply border-error-darkest !important;
+  @apply text-light !important;
+
+  &::placeholder {
+    @apply text-light !important;
+  }
+}
+
+.input-error-text {
+  font-weight: 400;
+  position: relative;
+  text-align: left;
+  @apply bg-dark;
+  @apply py-2 px-4;
+  @apply mt-0 mb-6;
+
+  &::after {
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid theme("colors.dark");
+    height: 0;
+    width: 0;
+
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+  }
+}
+
+.dark-form .input-error-text {
+  @apply text-light;
+}
